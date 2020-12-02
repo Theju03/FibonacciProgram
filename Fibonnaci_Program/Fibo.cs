@@ -20,7 +20,7 @@ namespace Fibonacci_Program
 
 
         /// <summary>This is the method for validating the input </summary>
-        private static long ValidInputCheck(string val)
+        public static long ValidInputCheck(string val)
         {
             long inputValue;
             bool success = long.TryParse(val, out inputValue);
@@ -35,7 +35,7 @@ namespace Fibonacci_Program
         }
 
         /// <summary>This is the method for calculating the nth Fibonacci number </summary>
-        private static long Fibonacci(long input)
+        public static long Fibonacci(long input)
         {
 
             if (input <= 1)
